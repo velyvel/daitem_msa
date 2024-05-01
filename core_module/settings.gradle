@@ -1,0 +1,6 @@
+rootProject.name = 'msa_test'
+
+include 'core_module'
+include 'msa_user'
+include 'msa_product'
+include 'msa_order'

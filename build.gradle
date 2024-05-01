@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+    }
+
+    group = 'org.daitem_msa'
+    version = '1.0-SNAPSHOT'
+
+    test {
+        useJUnitPlatform()
+    }
+
+}
+
+project(':core_module'){
+}
+
+project(':msa_user') {
+}
+
+project(':msa_product'){
+}
+
+project(':msa_order') {
+}
+

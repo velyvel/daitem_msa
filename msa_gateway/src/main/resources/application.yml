@@ -1,0 +1,24 @@
+server:
+  port: 8083
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  application:
+    name: msa_gateway
+  cloud:
+    gateway:
+      routes:
+        - id: user
+          uri: http://localhost:8080
+          predicates:
+            - Path=/api/v1/user
+        - id: product
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/v1/product
