@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e8a7721-6769-42cd-8fff-cf6ee7fdfc63" name="Changes" comment="[2024.05.01] merge to master">
-      <change afterPath="$PROJECT_DIR$/api_gateway/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_gateway/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_gateway/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_gateway/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_gateway/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_gateway/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_gateway/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_gateway/src/main/java/com/api_gateway/ApiGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_gateway/src/main/java/com/api_gateway/common/FilterConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_gateway/src/main/java/com/api_gateway/common/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_gateway/src/test/java/com/api_gateway/ApiGatewayApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_order/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_product/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/msa_product/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_user/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/msa_user/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msa_user/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +152,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.MsaUserApplication">
     <configuration name="msa_test:msa_my_page [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -262,7 +244,7 @@
       <workItem from="1714436747526" duration="17010000" />
       <workItem from="1714457059891" duration="19689000" />
       <workItem from="1714518162070" duration="9633000" />
-      <workItem from="1714534054252" duration="6906000" />
+      <workItem from="1714534054252" duration="9038000" />
     </task>
     <task id="LOCAL-00001" summary="[2024.05.01] merge to master">
       <option name="closed" value="true" />
