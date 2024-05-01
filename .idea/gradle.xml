@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/api_gateway" />
             <option value="$PROJECT_DIR$/core_module" />
             <option value="$PROJECT_DIR$/msa_order" />
             <option value="$PROJECT_DIR$/msa_product" />

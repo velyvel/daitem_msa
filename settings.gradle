@@ -1,5 +1,6 @@
 rootProject.name = 'msa_test'
 
+include 'api_gateway'
 include 'core_module'
 include 'msa_user'
 include 'msa_product'

@@ -5,17 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e8a7721-6769-42cd-8fff-cf6ee7fdfc63" name="Changes" comment="[2024.05.01] merge to master">
-      <change beforePath="$PROJECT_DIR$/core_module/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/core_module/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_module/src/main/java/org/daitem_msa/core_module/CoreModuleApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_module/src/main/java/org/daitem_msa/core_module/common/CommonResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_module/src/main/java/org/daitem_msa/core_module/common/JwtConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_module/src/main/java/org/daitem_msa/core_module/common/ProjectConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_module/src/main/java/org/daitem_msa/core_module/common/SwaggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_module/src/main/java/org/daitem_msa/core_module/security/MemberAuthenticationProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_module/src/main/java/org/daitem_msa/core_module/security/MemberDetailsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_module/src/main/java/org/daitem_msa/core_module/security/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_module/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_module/src/test/java/org/daitem_msa/core_module/CoreModuleApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/src/main/java/com/api_gateway/ApiGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/src/main/java/com/api_gateway/common/FilterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/src/main/java/com/api_gateway/common/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/src/test/java/com/api_gateway/ApiGatewayApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_order/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_product/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/msa_product/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_user/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/msa_user/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msa_user/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +32,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/api_gateway">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/core_module">
@@ -54,6 +65,11 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="msa_test" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="msa_test" type="f1a62948:ProjectNode" />
+                <item name="api_gateway" type="2d1252cf:ModuleNode" />
               </path>
             </expand>
             <select />
@@ -89,41 +105,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.Build msa_test.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.msa_test:msa_my_page [build].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.MsaOrderApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsaProductApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsaUserApplication.executor&quot;: &quot;Run&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;azul-21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/sulim/Desktop/msa_test/msa_user/src/main/java/org/daitem_msa/msa_user/common&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.Build api_gateway.executor": "Run",
+    "Gradle.Build msa_test.executor": "Run",
+    "Gradle.msa_test:msa_my_page [build].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.MsaOrderApplication.executor": "Run",
+    "Spring Boot.MsaProductApplication.executor": "Debug",
+    "Spring Boot.MsaUserApplication.executor": "Run",
+    "jdk.selected.JAVA_MODULE": "azul-21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/sulim/Desktop/msa_test/msa_user/src/main/java/org/daitem_msa/msa_user/common",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -136,11 +154,11 @@
       <recent name="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.api_gateway" />
       <recent name="org.daitem_msa.msa_user.controller" />
       <recent name="org.daitem_msa.msa_product.common" />
       <recent name="org.daitem_msa.msa_order.controller" />
       <recent name="org.daitem_msa.msa_product.controller" />
-      <recent name="org.daitem_msa.msa_order.repository" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -152,7 +170,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MsaUserApplication">
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
     <configuration name="msa_test:msa_my_page [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -175,9 +193,9 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CoreModuleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="msa_test.core_module.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.daitem_msa.core_module.CoreModuleApplication" />
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="msa_test.api_gateway.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.api_gateway.ApiGatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -205,8 +223,8 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.msa_test:msa_my_page [build]" />
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.MsaOrderApplication" />
-      <item itemvalue="Spring Boot.CoreModuleApplication" />
       <item itemvalue="Spring Boot.MsaProductApplication" />
       <item itemvalue="Spring Boot.MsaUserApplication" />
     </list>
@@ -244,7 +262,7 @@
       <workItem from="1714436747526" duration="17010000" />
       <workItem from="1714457059891" duration="19689000" />
       <workItem from="1714518162070" duration="9633000" />
-      <workItem from="1714534054252" duration="65000" />
+      <workItem from="1714534054252" duration="6906000" />
     </task>
     <task id="LOCAL-00001" summary="[2024.05.01] merge to master">
       <option name="closed" value="true" />
@@ -368,6 +386,26 @@
           <line>86</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/controller/MyPageController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/controller/MyPageController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/controller/MyPageController.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/controller/ProductController.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/common/security/UserFeignClient.java</url>
           <line>13</line>
@@ -385,6 +423,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/controller/MyPageController.java</url>
+          <line>31</line>
+          <properties class="org.daitem_msa.msa_user.controller.MyPageController" method="getUserMyPage">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

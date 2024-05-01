@@ -57,6 +57,9 @@ dependencies {
 
     //openfeign
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:4.1.1'
+
+    // gateway 버전
+//    implementation 'org.springframework.cloud:spring-cloud-starter-gateway:4.1.2'
 }
 
 tasks.named('test') {
