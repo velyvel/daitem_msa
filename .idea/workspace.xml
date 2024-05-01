@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7e8a7721-6769-42cd-8fff-cf6ee7fdfc63" name="Changes" comment="[2024.05.01] merge to master">
+      <change beforePath="$PROJECT_DIR$/core_module/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/core_module/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_module/src/main/java/org/daitem_msa/core_module/CoreModuleApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_module/src/main/java/org/daitem_msa/core_module/common/CommonResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_module/src/main/java/org/daitem_msa/core_module/common/JwtConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_module/src/main/java/org/daitem_msa/core_module/common/ProjectConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_module/src/main/java/org/daitem_msa/core_module/common/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_module/src/main/java/org/daitem_msa/core_module/security/MemberAuthenticationProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_module/src/main/java/org/daitem_msa/core_module/security/MemberDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_module/src/main/java/org/daitem_msa/core_module/security/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_module/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_module/src/test/java/org/daitem_msa/core_module/CoreModuleApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/core_module">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/msa_gateway">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/msa_mypage">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/../realNew/daitem_new">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/core_module">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/msa_my_page">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="msa_test" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2fg4xp07VcPOhYjqaBOVnNWqlui" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.Build msa_test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.msa_test:msa_my_page [build].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.MsaOrderApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MsaProductApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MsaUserApplication.executor&quot;: &quot;Run&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;azul-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sulim/Desktop/msa_test/msa_user/src/main/java/org/daitem_msa/msa_user/common&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/common" />
+      <recent name="$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/service" />
+      <recent name="$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/dto" />
+      <recent name="$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/controller" />
+      <recent name="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.daitem_msa.msa_user.controller" />
+      <recent name="org.daitem_msa.msa_product.common" />
+      <recent name="org.daitem_msa.msa_order.controller" />
+      <recent name="org.daitem_msa.msa_product.controller" />
+      <recent name="org.daitem_msa.msa_order.repository" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MsaUserApplication">
+    <configuration name="msa_test:msa_my_page [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/msa_my_page" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CoreModuleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="msa_test.core_module.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.daitem_msa.core_module.CoreModuleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsaOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="msa_test.msa_order.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.daitem_msa.msa_order.MsaOrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsaProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="msa_test.msa_product.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.daitem_msa.msa_product.MsaProductApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsaUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="msa_test.msa_user.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.daitem_msa.msa_user.MsaUserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.msa_test:msa_my_page [build]" />
+      <item itemvalue="Spring Boot.MsaOrderApplication" />
+      <item itemvalue="Spring Boot.CoreModuleApplication" />
+      <item itemvalue="Spring Boot.MsaProductApplication" />
+      <item itemvalue="Spring Boot.MsaUserApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.msa_test:msa_my_page [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e8a7721-6769-42cd-8fff-cf6ee7fdfc63" name="Changes" comment="" />
+      <created>1714209635711</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714209635711</updated>
+      <workItem from="1714209636690" duration="13731000" />
+      <workItem from="1714273558189" duration="1168000" />
+      <workItem from="1714274733172" duration="24708000" />
+      <workItem from="1714354232929" duration="4048000" />
+      <workItem from="1714358297977" duration="1831000" />
+      <workItem from="1714360137679" duration="23929000" />
+      <workItem from="1714436747526" duration="17010000" />
+      <workItem from="1714457059891" duration="19689000" />
+      <workItem from="1714518162070" duration="9633000" />
+      <workItem from="1714534054252" duration="65000" />
+    </task>
+    <task id="LOCAL-00001" summary="[2024.05.01] merge to master">
+      <option name="closed" value="true" />
+      <created>1714527925393</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714527925393</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="[2024.05.01] merge to master" />
+    <option name="LAST_COMMIT_MESSAGE" value="[2024.05.01] merge to master" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/service/UserServiceClient.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/common/security/UserFeignClient.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/common/security/MemberDetailsService.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/controller/ProductController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/service/ProductService.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/service/ProductService.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/controller/UserOrderController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/service/ProductDetailService.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/controller/OrderDetailController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/controller/OrderDetailController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/service/ProductDetailService.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/controller/ProductDetailOrderController.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/service/ProductDetailService.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/service/ProductDetailService.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderDetailService.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderDetailService.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/controller/OrderController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderService.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/service/ProductDetailService.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/service/WishListService.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/common/security/UserFeignClient.java</url>
+          <line>13</line>
+          <properties class="org.daitem_msa.msa_product.common.security.UserFeignClient" method="findByLoginId">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/ProductDetailFeignClient.java</url>
+          <line>30</line>
+          <properties class="org.daitem_msa.msa_order.common.ProductDetailFeignClient" method="findById">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
