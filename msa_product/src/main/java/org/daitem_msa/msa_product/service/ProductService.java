@@ -69,7 +69,7 @@ public class ProductService {
                     .color(Colors.ofColor(String.valueOf(detailDto.getColor())))
                     .size(Size.ofSize(String.valueOf(detailDto.getSize())))
                     .stock(detailDto.getStock())
-                    .isSaleTerms(detailDto.getIsSaleTerms())
+                    .isSaleTerms(YN.valueOf(String.valueOf(detailDto.getIsSaleTerms())))
                     .saleFromDate(detailDto.getSalesFromDate())
                     .saleToDate(detailDto.getSalesToDate())
                     .price(detailDto.getPrice())

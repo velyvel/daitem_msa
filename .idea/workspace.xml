@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e8a7721-6769-42cd-8fff-cf6ee7fdfc63" name="Changes" comment="[2024.05.01] merge to master">
+      <change afterPath="$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/controller/NewProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/service/NewProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/42f66a64-c87a-4bd6-bf7b-a185990e968b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/42f66a64-c87a-4bd6-bf7b-a185990e968b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/service/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +78,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "velyvel"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/velyvel/daitem_msa.git",
+    "accountId": "31d6c437-9121-4880-89c6-74404076666f"
+  }
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -103,6 +121,8 @@
     "Spring Boot.MsaOrderApplication.executor": "Run",
     "Spring Boot.MsaProductApplication.executor": "Debug",
     "Spring Boot.MsaUserApplication.executor": "Run",
+    "database.data.extractors.current.export.id": "Pretty-Groovy.txt.groovy",
+    "database.data.extractors.current.id": "CSV-Groovy.csv.groovy",
     "jdk.selected.JAVA_MODULE": "azul-21",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/sulim/Desktop/msa_test/msa_user/src/main/java/org/daitem_msa/msa_user/common",
@@ -244,7 +264,7 @@
       <workItem from="1714436747526" duration="17010000" />
       <workItem from="1714457059891" duration="19689000" />
       <workItem from="1714518162070" duration="9633000" />
-      <workItem from="1714534054252" duration="9038000" />
+      <workItem from="1714534054252" duration="17850000" />
     </task>
     <task id="LOCAL-00001" summary="[2024.05.01] merge to master">
       <option name="closed" value="true" />
