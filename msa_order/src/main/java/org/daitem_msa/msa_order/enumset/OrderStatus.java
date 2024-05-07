@@ -12,11 +12,12 @@ import java.util.EnumSet;
 public enum OrderStatus {
 
     NONE(null,  0),
-    ORDERED("ORDERED", 1),
-    DELIVERING("DELIVERING",  2),
-    DELIVERED("DELIVERED", 3),
-    DETERMINE("DETERMINE", 4),
-    CANCELLED("CANCELLED", 5);
+    ORDER_START("ORDERED", 1),
+    ORDERED("ORDERED", 2),
+    DELIVERING("DELIVERING",  3),
+    DELIVERED("DELIVERED", 4),
+    DETERMINE("DETERMINE", 5),
+    CANCELLED("CANCELLED", 6);
 
     private final String orderStatus;
     private final int value;

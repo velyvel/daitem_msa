@@ -58,6 +58,15 @@ dependencies {
     //openfeign
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:4.1.1'
 
+    //redis
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    //redis 의 redisson, 동시성
+    implementation 'org.redisson:redisson-spring-boot-starter:3.23.5'
+
+    //kafka
+    implementation 'org.springframework.kafka:spring-kafka:3.1.2'
+
+
     // gateway 버전
 //    implementation 'org.springframework.cloud:spring-cloud-starter-gateway:4.1.2'
 }

@@ -55,6 +55,7 @@ public class UserService {
                 .address1(dto.getAddress1())
                 .address2(dto.getAddress2())
                 .address3(dto.getAddress3())
+                .phone(dto.getPhone())
                 .isValid(YN.N)
                 .build();
         userRepository.save(user);
@@ -114,6 +115,7 @@ public class UserService {
             loginTokenDto.setAccessToken(accessToken);
             loginTokenDto.setRefreshToken(refreshToken);
 
+            System.out.println("로그인 성공공공");
             return loginTokenDto;
         } catch (Exception e) {
             e.printStackTrace();

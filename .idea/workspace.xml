@@ -5,13 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e8a7721-6769-42cd-8fff-cf6ee7fdfc63" name="Changes" comment="[2024.05.01] merge to master">
-      <change afterPath="$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/controller/NewProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/service/NewProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/kafka/KafkaConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/kafka/KafkaEventProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/kafka/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redis/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redisson/AopForTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redisson/CustomSpringELParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redisson/DistributionLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redisson/DistributionLockAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redisson/RedissonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/controller/NewOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/dto/NewOrderSaveDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/entity/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/repository/ItemsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/NewOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderStatusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/common/DatabaseSeeder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/42f66a64-c87a-4bd6-bf7b-a185990e968b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/42f66a64-c87a-4bd6-bf7b-a185990e968b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbee9c04-ed3f-4a9c-88a6-eaa316052306.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bbee9c04-ed3f-4a9c-88a6-eaa316052306.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_order/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/enumset/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/enumset/OrderStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_order/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_product/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/msa_product/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_product/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msa_product/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msa_user/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,10 +139,10 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.ApiGatewayApplication.executor": "Run",
     "Spring Boot.MsaOrderApplication.executor": "Run",
-    "Spring Boot.MsaProductApplication.executor": "Debug",
+    "Spring Boot.MsaProductApplication.executor": "Run",
     "Spring Boot.MsaUserApplication.executor": "Run",
     "database.data.extractors.current.export.id": "Pretty-Groovy.txt.groovy",
-    "database.data.extractors.current.id": "CSV-Groovy.csv.groovy",
+    "database.data.extractors.current.id": "Pretty-Groovy.txt.groovy",
     "jdk.selected.JAVA_MODULE": "azul-21",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/sulim/Desktop/msa_test/msa_user/src/main/java/org/daitem_msa/msa_user/common",
@@ -156,11 +176,11 @@
       <recent name="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.daitem_msa.msa_order.repository" />
+      <recent name="org.daitem_msa.msa_order.entity" />
+      <recent name="org.daitem_msa.msa_order.dto" />
       <recent name="com.api_gateway" />
       <recent name="org.daitem_msa.msa_user.controller" />
-      <recent name="org.daitem_msa.msa_product.common" />
-      <recent name="org.daitem_msa.msa_order.controller" />
-      <recent name="org.daitem_msa.msa_product.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -172,7 +192,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MsaUserApplication">
+  <component name="RunManager" selected="Spring Boot.MsaOrderApplication">
     <configuration name="msa_test:msa_my_page [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -264,7 +284,7 @@
       <workItem from="1714436747526" duration="17010000" />
       <workItem from="1714457059891" duration="19689000" />
       <workItem from="1714518162070" duration="9633000" />
-      <workItem from="1714534054252" duration="17850000" />
+      <workItem from="1714534054252" duration="115893000" />
     </task>
     <task id="LOCAL-00001" summary="[2024.05.01] merge to master">
       <option name="closed" value="true" />
@@ -374,11 +394,6 @@
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderService.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/service/ProductDetailService.java</url>
           <line>58</line>
           <option name="timeStamp" value="58" />
@@ -407,6 +422,11 @@
           <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/controller/ProductController.java</url>
           <line>61</line>
           <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/controller/UserController.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/common/security/UserFeignClient.java</url>
