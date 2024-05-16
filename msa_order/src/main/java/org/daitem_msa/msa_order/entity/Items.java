@@ -28,8 +28,21 @@ public class Items {
 
     // 상품 상세 아이디
     private Long productDetailId;
-
-    // 재고
+    // 수량
     private int stock;
 
+    @Version
+    private int version;
+
+    // 영속화 전 수행하는 로직
+    @PrePersist
+    public void prePersist() {
+        decrease();
+    }
+
+    private void decrease() {
+        if(stock > 0) {
+            stock --;
+        }
+    }
 }

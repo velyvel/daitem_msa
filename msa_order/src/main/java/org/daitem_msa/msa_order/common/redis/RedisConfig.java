@@ -7,6 +7,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.listener.RedisMessageListenerContainer;
+import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
+import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -32,12 +35,22 @@ public class RedisConfig {
 
     // redis template
     @Bean
-    public RedisTemplate<String, Object> redisTemplate() {
-        RedisTemplate<String, Object> redisTemplate = new RedisTemplate<>();
+    public RedisTemplate<?, ?> redisTemplate() {
+        RedisTemplate<byte[], byte[]> redisTemplate = new RedisTemplate<>();
         redisTemplate.setConnectionFactory(redisConnectionFactory());
+
+        // 기본 직렬화( JSON 형식) Object <=> JSON
+        redisTemplate.setDefaultSerializer(new GenericJackson2JsonRedisSerializer());
+
+        // Key 직렬화 (String 형식)
         redisTemplate.setKeySerializer(new StringRedisSerializer());
-        redisTemplate.setValueSerializer(new StringRedisSerializer());
-        redisTemplate.setEnableTransactionSupport(true);  // 설정 필요한 부분
+
+        // value 직렬화 (JSON 형식)
+        redisTemplate.setValueSerializer(new GenericJackson2JsonRedisSerializer());
+
+        // 해시 데이터 구조 직렬화 (JSON 형식)
+        redisTemplate.setHashValueSerializer(new GenericJackson2JsonRedisSerializer());
+
         return redisTemplate;
     }
 
@@ -45,6 +58,14 @@ public class RedisConfig {
     @Bean
     public PlatformTransactionManager transactionManager() {
         return new JpaTransactionManager();
+    }
+
+    // pub/sub 메세지처리 Listener
+    @Bean
+    public RedisMessageListenerContainer redisMessageListenerContainer() {
+        RedisMessageListenerContainer container = new RedisMessageListenerContainer();
+        container.setConnectionFactory(redisConnectionFactory());
+        return container;
     }
 
 }

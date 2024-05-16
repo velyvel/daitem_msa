@@ -14,5 +14,6 @@ import java.util.List;
 public class NewOrderSaveDto {
     private Long userId;
     private int stock;
-    //private Long productDetailId;
+    private String itemId;
+    private Long productDetailId;
 }

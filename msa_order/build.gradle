@@ -31,9 +31,10 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.mysql:mysql-connector-j'
     annotationProcessor 'org.projectlombok:lombok'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test'
-
+    testImplementation 'org.springframework.boot:spring-boot-starter-data-redis'
     //jwt
     implementation 'com.nimbusds:nimbus-jose-jwt:9.37.3'
 
@@ -64,7 +65,7 @@ dependencies {
     implementation 'org.redisson:redisson-spring-boot-starter:3.23.5'
 
     //kafka
-    implementation 'org.springframework.kafka:spring-kafka:3.1.2'
+    //implementation 'org.springframework.kafka:spring-kafka:3.1.2'
 
 
     // gateway 버전

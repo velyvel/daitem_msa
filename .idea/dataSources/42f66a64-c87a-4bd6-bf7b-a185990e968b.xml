@@ -1073,7 +1073,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="290" parent="1" name="daitem_product">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-05-01.07:56:02</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-05-04.05:39:11</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="291" parent="1" name="daitem_user">
@@ -1240,7 +1240,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="330" parent="306" name="wish_id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>4</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
