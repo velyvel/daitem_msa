@@ -5,55 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e8a7721-6769-42cd-8fff-cf6ee7fdfc63" name="Changes" comment="[2024.05.08] MAKE settings for kafka">
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/generated/org/daitem_msa/msa_order/entity/QItems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/generated/org/daitem_msa/msa_order/entity/QOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/generated/org/daitem_msa/msa_order/entity/QOrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redis/RedisPubSubController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redis/RedisPubSubService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redis/RedisPublisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redis/RedisSubscribeListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redis/dto/MessageDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redisson/DistributionAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redisson/TransactionAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/controller/OrderAndPayDBController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/controller/OrderAndPayWithRedisController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/dto/NewOrderItemDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/dto/NewOrderSaveOneDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/entity/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/entity/ItemHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/event/OrderCreatedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/event/OrderCreatedEventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/event/PaymentCanceledEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/event/PaymentCanceledEventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/forlock/ItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/forlock/LockController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/forlock/LockDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/repository/ItemsHistoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithCacheService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithDBService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_order/src/test/java/org/daitem_msa/msa_order/StockServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_product/src/main/generated/org/daitem_msa/msa_product/entity/QProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_product/src/main/generated/org/daitem_msa/msa_product/entity/QProductDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_product/src/main/generated/org/daitem_msa/msa_product/entity/QWishList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/msa_user/src/main/generated/org/daitem_msa/msa_user/entity/QUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/42f66a64-c87a-4bd6-bf7b-a185990e968b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/42f66a64-c87a-4bd6-bf7b-a185990e968b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbee9c04-ed3f-4a9c-88a6-eaa316052306.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bbee9c04-ed3f-4a9c-88a6-eaa316052306.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_order/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redis/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redis/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redisson/AopForTransaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redisson/CustomSpringELParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redisson/DistributionLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redisson/DistributionLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redisson/DistributionLockAspect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redisson/RedissonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redisson/RedissonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/controller/NewOrderController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/dto/NewOrderSaveDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/dto/NewOrderSaveDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/entity/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/entity/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/forlock/LockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/forlock/LockController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/repository/ItemsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/repository/ItemsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/NewOrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_order/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/controller/MyPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/controller/MyPageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,18 +82,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "velyvel"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;velyvel&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/velyvel/daitem_msa.git",
-    "accountId": "31d6c437-9121-4880-89c6-74404076666f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/velyvel/daitem_msa.git&quot;,
+    &quot;accountId&quot;: &quot;31d6c437-9121-4880-89c6-74404076666f&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -177,7 +136,7 @@
     "Spring Boot.MsaOrderApplication.executor": "Run",
     "Spring Boot.MsaProductApplication.executor": "Run",
     "Spring Boot.MsaUserApplication.executor": "Run",
-    "database.data.extractors.current.export.id": "Pretty-Groovy.txt.groovy",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "database.data.extractors.current.id": "Pretty-Groovy.txt.groovy",
     "jdk.selected.JAVA_MODULE": "azul-21",
     "kotlin-language-version-configured": "true",
@@ -188,10 +147,10 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -313,7 +272,10 @@
       <workItem from="1714436747526" duration="17010000" />
       <workItem from="1714457059891" duration="19689000" />
       <workItem from="1714518162070" duration="9633000" />
-      <workItem from="1714534054252" duration="254973000" />
+      <workItem from="1714534054252" duration="256777000" />
+      <workItem from="1715896599535" duration="2038000" />
+      <workItem from="1715912349725" duration="1939000" />
+      <workItem from="1715939346183" duration="4347000" />
     </task>
     <task id="LOCAL-00001" summary="[2024.05.01] merge to master">
       <option name="closed" value="true" />

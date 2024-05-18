@@ -23,7 +23,7 @@ public class LockController {
         }
     }
 
-    @PostMapping("/api/v1/optimistic/request")
+    @PostMapping("/api/v1/pessimistic/request")
     public CommonResponse<?> forPessimistic(@RequestBody LockDto dto) {
         try {
             itemService.forPessimistic(dto);

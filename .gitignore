@@ -15,7 +15,8 @@ build/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-.properties
+# Ignore application.properties file
+application.properties
 
 ### Eclipse ###
 .apt_generated

@@ -43,7 +43,7 @@ public class MyPageController {
      */
     @PutMapping("/api/v1/my-page")
     @SecurityRequirement(name = HttpHeaders.AUTHORIZATION)
-    //@PreAuthorize("hasRole('NORMAL')")
+//    @PreAuthorizeorize("hasRole('NORMAL')")
     @ResponseBody
     public CommonResponse<?> updateMemberDetails(@AuthenticationPrincipal User user,
                                               @RequestBody MyPageUpdateDto updateDto){
