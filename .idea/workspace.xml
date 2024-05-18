@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e8a7721-6769-42cd-8fff-cf6ee7fdfc63" name="Changes" comment="[2024.05.08] MAKE settings for kafka">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_order/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_order/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +268,7 @@
       <workItem from="1714534054252" duration="256777000" />
       <workItem from="1715896599535" duration="2038000" />
       <workItem from="1715912349725" duration="1939000" />
-      <workItem from="1715939346183" duration="4838000" />
+      <workItem from="1715939346183" duration="5185000" />
     </task>
     <task id="LOCAL-00001" summary="[2024.05.01] merge to master">
       <option name="closed" value="true" />
