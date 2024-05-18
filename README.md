@@ -29,8 +29,8 @@
 1. Docker가 설치되어 있어야 합니다. <br>
 2. Docker에 mySQL, Redis, kafka 이미지가 설치되어 있어야 합니다<br>
 3. 로컬 실행 환경 : git fork 하여 프로젝트 root 위치로 가 아래의 명령어를 입력해 주세요<br>
-```perl
-docker compose up 
+```sh
+docker compose up
 ```
 <br>
 4. 로컬에서 실행 후 
@@ -42,14 +42,12 @@ docker compose up
 
 ## 🧐 기술적 의사결정
 <p> 
-[로그인] Refresh Token과 Access Token은 같이 응답값으로 내려 주어야 하는가?<br>
-그렇다면 토큰에는 무슨 정보가 담겨야 할까?<br>
-[아키텍쳐]왜 MSA로 전환했을까?<br>
+[로그인] Refresh Token과 Access Token은 같이 응답값으로 내려 주어야 하는가? 그렇다면 토큰에는 무슨 정보가 담겨야 할까?<br>
+[아키텍쳐] 왜 MSA로 전환했을까?<br>
 [동시성 처리] lock에서 messsage 방식으로, kafka까지 적용해보기<br>
 </p>
 
 ## 💫 트러블 슈팅
-
 <details>
     <summary>`[동시성 처리]`</summary>
     문제 상황 : @Transactional 레벨에서의 동시성 처리, 레이스 컨디션으로 인한 초과
