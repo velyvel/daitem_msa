@@ -1,12 +1,13 @@
+#server:
+#  port: 8083
+
 server:
-  port: 8083
+  port: 8761
 
 eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-    service-url:
-      defaultZone: http://localhost:8761/eureka
 
 spring:
   application:
@@ -15,10 +16,14 @@ spring:
     gateway:
       routes:
         - id: user
-          uri: http://localhost:8080
+          uri: lb://msa_user
           predicates:
-            - Path=/api/v1/user
+            - Path=/api/v1/user/**
         - id: product
-          uri: http://localhost:8081
+          uri: lb://msa_product
           predicates:
-            - Path=/api/v1/product
+            - Path=/api/v1/product/**
+        - id: order
+          uri: lb://msa_order
+          predicates:
+            - Path=/api/v1/product/**

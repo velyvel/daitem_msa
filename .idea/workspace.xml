@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e8a7721-6769-42cd-8fff-cf6ee7fdfc63" name="Changes" comment="[2024.05.08] MAKE settings for kafka">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api_gateway/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_gateway/src/main/java/com/api_gateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api_gateway/src/main/java/com/api_gateway/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api_gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_gateway/src/main/java/com/msa_gateway/MsaGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_gateway/src/main/java/com/msa_gateway/MsaGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/msa_gateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,11 +55,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="msa_test" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="msa_test" type="f1a62948:ProjectNode" />
-                <item name="api_gateway" type="2d1252cf:ModuleNode" />
               </path>
             </expand>
             <select />
@@ -103,56 +102,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.Build api_gateway.executor": "Run",
-    "Gradle.Build msa_test.executor": "Run",
-    "Gradle.MsaOrderApplicationTests.executor": "Run",
-    "Gradle.StockServiceTest.executor": "Run",
-    "Gradle.StockServiceTest.testWithoutDistribution.executor": "Run",
-    "Gradle.msa_test:msa_my_page [build].executor": "Run",
-    "Gradle.msa_test:msa_order [:msa_order:test.main()].executor": "Run",
-    "Gradle.test.executor": "Run",
-    "Gradle.test.test.executor": "Run",
-    "JUnit.StockServiceTest.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ApiGatewayApplication.executor": "Run",
-    "Spring Boot.MsaOrderApplication.executor": "Run",
-    "Spring Boot.MsaProductApplication.executor": "Run",
-    "Spring Boot.MsaUserApplication.executor": "Run",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "database.data.extractors.current.id": "Pretty-Groovy.txt.groovy",
-    "jdk.selected.JAVA_MODULE": "azul-21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/sulim/Desktop/msa_test/msa_order/src/test/java/org/daitem_msa/msa_order",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.Build api_gateway.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build msa_test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MsaOrderApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.StockServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.StockServiceTest.testWithoutDistribution.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.msa_test:msa_my_page [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.msa_test:msa_order [:msa_order:test.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.test.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StockServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MsaOrderApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MsaProductApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MsaUserApplication.executor&quot;: &quot;Run&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;database.data.extractors.current.id&quot;: &quot;Pretty-Groovy.txt.groovy&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;azul-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sulim/Desktop/msa_test/msa_order/src/test/java/org/daitem_msa/msa_order&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -181,7 +180,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MsaOrderApplication">
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
     <configuration name="StockServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="msa_test.msa_order.test" />
       <extension name="coverage">
@@ -269,7 +268,8 @@
       <workItem from="1714534054252" duration="256777000" />
       <workItem from="1715896599535" duration="2038000" />
       <workItem from="1715912349725" duration="1939000" />
-      <workItem from="1715939346183" duration="5629000" />
+      <workItem from="1715939346183" duration="7963000" />
+      <workItem from="1715999201046" duration="1906000" />
     </task>
     <task id="LOCAL-00001" summary="[2024.05.01] merge to master">
       <option name="closed" value="true" />
