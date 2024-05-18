@@ -16,6 +16,7 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 application.properties
+msa_order/src/main/resources/application.properties
 
 ### Eclipse ###
 .apt_generated
