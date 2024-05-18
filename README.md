@@ -30,11 +30,12 @@ contact here 👉🏻 <a href="mailto:eathergs012@gmail.com"> 📨 send me</a><b
 1. Docker가 설치되어 있어야 합니다. <br>
 2. Docker에 mySQL, Redis, kafka 이미지가 설치되어 있어야 합니다<br>
 3. 로컬 실행 환경 : git fork 하여 프로젝트 root 위치로 가 아래의 명령어를 입력해 주세요<br>
-<pre>
+<!-- <pre>
     <code>
         docker-compose up
     </code>
-</pre>
+</pre> -->
+    `var test = 123`
 4. 다음 명령어로 로그를 확인해 주세요
 <pre>
     <code>
