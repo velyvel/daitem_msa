@@ -29,9 +29,9 @@
 1. Docker가 설치되어 있어야 합니다. <br>
 2. Docker에 mySQL, Redis, kafka 이미지가 설치되어 있어야 합니다<br>
 3. 로컬 실행 환경 : git fork 하여 프로젝트 root 위치로 가 아래의 명령어를 입력해 주세요<br>
-```sh
-docker-compose up
-```
+<pre>
+    <code>{이것은 코드인가?}</code>
+</pre>
 <br>
 4. 로컬에서 실행 후 
 <a href="http://localhost:8083/swagger-ui/index.html">http://localhost:8083/swagger-ui/index.html</a> 로 접속하면 테스트 할 수 있는 환경이 제공됩니다.
