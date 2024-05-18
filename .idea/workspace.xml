@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7e8a7721-6769-42cd-8fff-cf6ee7fdfc63" name="Changes" comment="[2024.05.08] MAKE settings for kafka">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/42f66a64-c87a-4bd6-bf7b-a185990e968b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/42f66a64-c87a-4bd6-bf7b-a185990e968b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bbee9c04-ed3f-4a9c-88a6-eaa316052306.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bbee9c04-ed3f-4a9c-88a6-eaa316052306.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/forlock/LockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/forlock/LockController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/repository/ItemsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/repository/ItemsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/controller/MyPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/controller/MyPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_order/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +270,7 @@
       <workItem from="1714534054252" duration="256777000" />
       <workItem from="1715896599535" duration="2038000" />
       <workItem from="1715912349725" duration="1939000" />
-      <workItem from="1715939346183" duration="4347000" />
+      <workItem from="1715939346183" duration="4838000" />
     </task>
     <task id="LOCAL-00001" summary="[2024.05.01] merge to master">
       <option name="closed" value="true" />

@@ -15,7 +15,6 @@ build/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-# Ignore application.properties file
 application.properties
 
 ### Eclipse ###
