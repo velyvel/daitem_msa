@@ -30,7 +30,7 @@
 2. Docker에 mySQL, Redis, kafka 이미지가 설치되어 있어야 합니다<br>
 3. 로컬 실행 환경 : git fork 하여 프로젝트 root 위치로 가 아래의 명령어를 입력해 주세요<br>
 ```sh
-docker compose up
+docker-compose up
 ```
 <br>
 4. 로컬에서 실행 후 
