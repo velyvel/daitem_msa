@@ -9,10 +9,15 @@ import org.daitem_msa.msa_order.common.redisson.DistributionLock;
 import org.daitem_msa.msa_order.dto.NewOrderSaveDto;
 import org.daitem_msa.msa_order.dto.NewOrderSaveOneDto;
 import org.daitem_msa.msa_order.entity.Item;
+import org.daitem_msa.msa_order.entity.Items;
 import org.daitem_msa.msa_order.entity.Order;
 import org.daitem_msa.msa_order.enumset.OrderStatus;
+import org.daitem_msa.msa_order.repository.ItemsRepository;
 import org.daitem_msa.msa_order.repository.OrderRepository;
+import org.redisson.api.RLock;
+import org.redisson.api.RedissonClient;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -36,8 +41,10 @@ public class OrderAndPayWithCacheService {
     // 레디스 이벤트 발생
     private final RedisPubSubService redisPubSubService;
     private final OrderRepository orderRepository;
+    private final ItemsRepository itemsRepository;
     Map<Long, Integer> orderInfo = new HashMap<>();
     Map<Long, Integer> waitingInfo = new HashMap<>();
+    private final RedissonClient redissonClient;
 
 
     @Transactional
@@ -88,13 +95,6 @@ public class OrderAndPayWithCacheService {
         }
     }
 
-    // 주문 이벤트 만들기
-//    private void makeOrderEvent(MessageDto messageDto, Long userId) {
-//        String channel = "ddd";
-//        messageDto.setMessage("주문 생성 완료");
-//        messageDto.setSender("orderServer");
-//        messageDto.setRecipient(userId.toString());
-//    }
 
     // 레디스 주문 큐에 넣어준 데이터들 리스트 조회하기: queueName = 주문 큐
     public List<Map<Long, Integer>> resultWithRedisson(String itemId) {
@@ -140,10 +140,96 @@ public class OrderAndPayWithCacheService {
             System.out.println("========== 주문 결제 완료 ========");
         }
     }
+    // Write Through 버전
+    @DistributionLock(lockName = "orderPayWriteThrough")
+    public void orderPayWriteThrough(NewOrderSaveDto dto) {
+        RLock lock = redissonClient.getLock("orderPayWriteThrough");
+        try{
+            lock.lock();
+            log.info("============= 락을 획득하였습니다 ==========" + dto.getUserId());
+            Item item = redisTemplate.opsForValue().get(dto.getItemId());
+            if(item == null) {
+                throw new RuntimeException("아이템을 조회할 수 없습니다.");
+            }
+            // 재고 처리
+            if (item.getStock() > 0) {
+                item.setStock(item.getStock() - dto.getStock());
+                // 재고 차감 후 저장(캐시)
+                redisProductAdd(item);
+                log.info("레디스에 재고 반영 완료");
+                // 그 후 재고 조회 후 DB 저장(items 와 item 은 다른 자료형)
+                Items items = itemsRepository.findById(Long.valueOf(dto.getItemId())).orElseThrow();
+                itemsRepository.save(items);
+                log.info("데이터베이스에 저장 완료");
+            } else {
+                log.info("재고가 없어서 요청을 보내지 않습니다.");
+            }
 
+        } finally {
+            lock.unlock();
+            log.info("=====락 해제되었습니다 =======");
+        }
+
+
+    }
+
+    // Write Back 버전 : queue
+    @DistributionLock(lockName = "orderPayWriteBack")
+    public void orderPayWriteBack(NewOrderSaveDto dto) {
+        RLock lock = redissonClient.getLock("orderPayWriteBack");
+        try {
+            lock.lock();
+            log.info("============= 락을 획득하였습니다 ==========" + dto.getUserId());
+
+            Item item = redisTemplate.opsForValue().get(dto.getItemId());
+            if (item == null) {
+                throw new RuntimeException("아이템을 조회할 수 없습니다.");
+            }
+
+            synchronized (item) {
+                if (item.getStock() > 0) {
+                    item.setStock(item.getStock() - dto.getStock());
+                    // 재고 차감 후 캐시에 저장
+                    redisProductAdd(item);
+                    // 주문 정보를 큐에 추가
+                    Map<Long, Integer> orderInfo = new HashMap<>();
+                    orderInfo.put(dto.getUserId(), dto.getStock());
+                    createOrderRedisTemplate.opsForList().leftPush("orderQueue", orderInfo);
+                    log.info("재고 반영 완료");
+
+                    // 비동기로 데이터베이스에 저장(큐에 있는 정보 다 저장)
+                    asyncUpdateDatabase(item);
+                } else {
+                    log.info("재고가 없어서 요청을 보내지 않습니다.");
+                }
+            }
+        } finally {
+            // 락 해제
+            lock.unlock();
+            log.info("=====락 해제되었습니다 =======");
+        }
+    }
+
+    //스케줄러 돌면서 재고 반영
+    @Async
+    public void asyncUpdateDatabase(Item item) {
+        String queueName = "orderQueue";
+        List<Map<Long, Integer>> queueItems = createOrderRedisTemplate.opsForList().range(queueName, 0, -1);
+
+        if (queueItems != null) {
+            for (Map<Long, Integer> orderInfo : queueItems) {
+                if (orderInfo.containsKey(item.getItemId())) {
+                    createOrderRedisTemplate.opsForList().remove(queueName, 1, orderInfo);
+                    break;
+                }
+            }
+        }
+    }
+
+    // 나 일단 뭐했지
     public int showStock(String id) {
-        Item item = redisTemplate.opsForValue().get(id);
-        return item == null ? 0 : item.getStock();
+
+        return -1;
     }
 }
 

@@ -106,4 +106,34 @@ public class OrderAndPayWithRedisController {
         return CommonResponse.ok(stock);
     }
 
+    /**
+     * readTrough + write Through
+     * */
+    @PostMapping("/api/v2/order/orderPayWriteThrough")
+    public CommonResponse<?> orderPayWriteThrough(@RequestBody NewOrderSaveDto dto){
+        try{
+            System.out.println("=======" + dto.getUserId() + "번 구매 요청");
+            cacheService.orderPayWriteThrough(dto);
+            return CommonResponse.ok("주문 구매 요청(write through");
+        }catch (Exception e) {
+            return new CommonResponse<>(500, e.getMessage());
+        }
+    }
+
+    /**
+     * readTrough + write Through
+     * */
+    @PostMapping("/api/v2/order/orderPayWriteBack")
+    public CommonResponse<?> orderPayWriteBack(@RequestBody NewOrderSaveDto dto){
+        try{
+            System.out.println("=======" + dto.getUserId() + "번 구매 요청");
+            cacheService.orderPayWriteBack(dto);
+            return CommonResponse.ok("주문 구매 요청(write back");
+        }catch (Exception e) {
+            return new CommonResponse<>(500, e.getMessage());
+        }
+    }
+
+
+
 }

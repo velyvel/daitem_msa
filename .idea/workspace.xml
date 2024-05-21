@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e8a7721-6769-42cd-8fff-cf6ee7fdfc63" name="Changes" comment="[2024.05.08] MAKE settings for kafka">
+      <change afterPath="$PROJECT_DIR$/msa_gateway/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api_gateway/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_gateway/src/main/java/com/api_gateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api_gateway/src/main/java/com/api_gateway/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_gateway/src/main/java/com/api_gateway/common/FilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api_gateway/src/main/java/com/api_gateway/common/FilterConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api_gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_gateway/src/main/java/com/msa_gateway/MsaGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_gateway/src/main/java/com/msa_gateway/MsaGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/msa_gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/controller/OrderAndPayWithRedisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/controller/OrderAndPayWithRedisController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithCacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithCacheService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msa_user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msa_user/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +182,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.MsaOrderApplication">
     <configuration name="StockServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="msa_test.msa_order.test" />
       <extension name="coverage">
@@ -269,7 +271,8 @@
       <workItem from="1715896599535" duration="2038000" />
       <workItem from="1715912349725" duration="1939000" />
       <workItem from="1715939346183" duration="7963000" />
-      <workItem from="1715999201046" duration="1906000" />
+      <workItem from="1715999201046" duration="7662000" />
+      <workItem from="1716018527472" duration="11659000" />
     </task>
     <task id="LOCAL-00001" summary="[2024.05.01] merge to master">
       <option name="closed" value="true" />
@@ -450,13 +453,8 @@
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/controller/OrderAndPayWithRedisController.java</url>
-          <line>121</line>
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithCacheService.java</url>
-          <line>71</line>
+          <line>78</line>
           <option name="timeStamp" value="102" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -466,7 +464,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithCacheService.java</url>
-          <line>79</line>
+          <line>86</line>
           <option name="timeStamp" value="109" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
