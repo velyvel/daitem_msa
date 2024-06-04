@@ -16,7 +16,13 @@ import org.daitem_msa.msa_order.repository.ItemsRepository;
 import org.daitem_msa.msa_order.repository.OrderRepository;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
+import org.springframework.data.redis.connection.RedisConnection;
+import org.springframework.data.redis.connection.ReturnType;
+import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.core.script.DefaultRedisScript;
+import org.springframework.data.redis.core.script.RedisScript;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -45,6 +51,8 @@ public class OrderAndPayWithCacheService {
     Map<Long, Integer> orderInfo = new HashMap<>();
     Map<Long, Integer> waitingInfo = new HashMap<>();
     private final RedissonClient redissonClient;
+    private final StringRedisTemplate stringRedisTemplate;
+    private final RedisScript<Long> stockDecreaseScript;
 
 
     @Transactional
@@ -226,9 +234,34 @@ public class OrderAndPayWithCacheService {
         }
     }
 
+    //lua script 적용하기
+    public void orderPayWriteBackLua(NewOrderSaveDto dto) {
+        String key = "itemKey";
+        String itemId = dto.getItemId();
+        try {
+            Long stockCount = stringRedisTemplate.execute(
+                stockDecreaseScript,
+                List.of(key), // 두 번째 인자로 키 전달
+                itemId // 세 번째 인자로 아이템 ID 전달
+            );
+
+            if (stockCount == null) {
+                throw new RuntimeException("재고가 소진되었습니다.");
+            }
+
+            // 로깅
+          log.info("luaScript 호출 후 남은 재고 = {}", stockCount);
+
+        } catch (Exception e) {
+            throw new RuntimeException("재고가 소진되었습니다.", e);
+        }
+    }
+    
+    
+
+
     // 나 일단 뭐했지
     public int showStock(String id) {
-
         return -1;
     }
 }

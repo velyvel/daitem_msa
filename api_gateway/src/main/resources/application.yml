@@ -1,39 +1,71 @@
 server:
-  port: 8761
-
+  port: 8083
 eureka:
-  instance:
-    hostname: localhost
   client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
 
 spring:
+  profiles:
+    include: secret
   application:
-    name: api_gateway
-  config:
-    import: "optional:configserver:"
-#  cloud:
-#    gateway:
-#      routes:
-#        - id: user-service
-#          uri: lb://user-service
-#          predicates:
-#            - Path=/api/v1/user/**
-#            - Path=/api/v1/user-order/**
-#            - Path=/api/v1/my-page/**
-#        - id: product-service
-#          uri: lb://product-service
-#          predicates:
-#            - Path=/api/v1/product/**
-#            - Path=/api/v1/product-detail/**
-#            - Path=/api/v1/cart/**
-#            - Path=/api/v1/order-to-product/**
-#        - id: order-service
-#          uri: lb://order-service
-#          predicates:
-#            - Path=/api/v1/order/**
-#            - Path=/api/v1/order-detail/**
-#            - Path=/api/v1/delivery/**
+    name: api_gateway_service
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: guest
+#    password: guest
+    cloud:
+      gateway:
+        routes:
+          - id: msa_user
+            uri: lb://USER-SERVICE
+            predicates:
+              - Path=/api/v1/user/**
+              - Method=GET, POST, PATCH, DELETE
+            filters:
+              - RemoveRequestHeader=Cookie
+              - AuthorizationFilter
+
+          - id: msa_user_login
+            uri: lb://USER-SERVICE
+            predicates:
+              - Path=/api/v1/user/**
+              - Method=POST
+            filters:
+              - RemoveRequestHeader=Cookie
+
+          - id: msa_order
+            uri: lb://ORDER-SERVICE
+            predicates:
+              - Path=/api/v1/order
+              - Method=GET, POST, PUT
+            filters:
+              - RemoveRequestHeader=Cookie
+              - RewritePath=/productService/(?<segment>.*), /${segment}
+              - AuthorizationHeaderFilter
+
+          - id: msa_product
+            uri: lb://ORDER-SERVICE
+            predicates:
+              - Path=/api/v1/product
+              - Method=GET, POST, PUT, DELETE
+            filters:
+              - RemoveRequestHeader=Cookie
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+
+management:
+  endpoints:
+    web:
+      exposure:
+#Refresh : 컨텍스트 다시 로드, health : 애플리케이션의 상태 확인, beans : 애플리케이션의 빈 정보 확인
+#        httptrace : 최근 요청, 응답 추정, busrefresh : 클러스터 내에서 설정을 다시 로드
+        include: refresh, health, beans, httptrace, busrefresh
+
+
+

@@ -134,6 +134,20 @@ public class OrderAndPayWithRedisController {
         }
     }
 
+    /**
+     * readTrough + write Through
+     * */
+    @PostMapping("/api/v2/order/orderPayWriteBackLua")
+    public CommonResponse<?> orderPayWriteBackLua(@RequestBody NewOrderSaveDto dto){
+        try{
+            System.out.println("=======" + dto.getUserId() + "번 구매 요청 with lua");
+            cacheService.orderPayWriteBackLua(dto);
+            return CommonResponse.ok("주문 구매 요청(write back");
+        }catch (Exception e) {
+            return new CommonResponse<>(500, e.getMessage());
+        }
+    }
+
 
 
 }

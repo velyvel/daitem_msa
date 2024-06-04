@@ -11,6 +11,19 @@
 악세서리 e-commerce 플랫폼을 구축하였습니다. <br>
 기존 monolithic 서비스를 분산 환경으로 전환하여 대용량 트래픽을 효과적으로 처리할 수 있도록 설계하였습니다.
 </p>
+<hr>
+
+<h2> 🏆 사용한 기술들 (back-end)</h2>
+<p>
+- java 17 <br>
+- spring boot 3.2.5<br>
+- spring security, spring cloud gateway<br>
+- JPA<br>
+- mySQL<br>
+- redis 7.2.4 <br>
+- kafka 3.7.0 (Zookeeper 3.8.3)<br>
+
+</p>
 
 ## 📋 목차 <br>
 1. [⚒️ 설계](#-설계) <br>

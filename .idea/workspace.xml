@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e8a7721-6769-42cd-8fff-cf6ee7fdfc63" name="Changes" comment="[2024.05.08] MAKE settings for kafka">
-      <change afterPath="$PROJECT_DIR$/msa_gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/common/redis/LuaScriptConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msa_order/src/main/resources/stockDecrease.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/api_gateway/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_gateway/src/main/java/com/api_gateway/common/FilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api_gateway/src/main/java/com/api_gateway/common/FilterConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api_gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/controller/OrderAndPayWithRedisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/controller/OrderAndPayWithRedisController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithCacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithCacheService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msa_user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/msa_user/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,56 +101,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Gradle.Build api_gateway.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build msa_test.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MsaOrderApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.StockServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.StockServiceTest.testWithoutDistribution.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.msa_test:msa_my_page [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.msa_test:msa_order [:msa_order:test.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.test.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.test.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.StockServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsaOrderApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsaProductApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsaUserApplication.executor&quot;: &quot;Run&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;database.data.extractors.current.id&quot;: &quot;Pretty-Groovy.txt.groovy&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;azul-21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/sulim/Desktop/msa_test/msa_order/src/test/java/org/daitem_msa/msa_order&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Build api_gateway.executor": "Run",
+    "Gradle.Build msa_test.executor": "Run",
+    "Gradle.MsaOrderApplicationTests.executor": "Run",
+    "Gradle.StockServiceTest.executor": "Run",
+    "Gradle.StockServiceTest.testWithoutDistribution.executor": "Run",
+    "Gradle.msa_test:msa_my_page [build].executor": "Run",
+    "Gradle.msa_test:msa_order [:msa_order:test.main()].executor": "Run",
+    "Gradle.test.executor": "Run",
+    "Gradle.test.test.executor": "Run",
+    "JUnit.StockServiceTest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.MsaOrderApplication.executor": "Debug",
+    "Spring Boot.MsaProductApplication.executor": "Run",
+    "Spring Boot.MsaUserApplication.executor": "Run",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "database.data.extractors.current.id": "Pretty-Groovy.txt.groovy",
+    "jdk.selected.JAVA_MODULE": "azul-21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/sulim/Desktop/msa_test/msa_order/src/test/java/org/daitem_msa/msa_order",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -166,10 +163,10 @@
       <recent name="$PROJECT_DIR$/msa_user/src/main/java/org/daitem_msa/msa_user/controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.daitem_msa.msa_order.dto" />
       <recent name="org.daitem_msa.msa_order.repository" />
       <recent name="org.daitem_msa.msa_order.forlock" />
       <recent name="org.daitem_msa.msa_order.entity" />
-      <recent name="org.daitem_msa.msa_order.dto" />
       <recent name="org.daitem_msa.msa_order.service" />
     </key>
   </component>
@@ -272,7 +269,7 @@
       <workItem from="1715912349725" duration="1939000" />
       <workItem from="1715939346183" duration="7963000" />
       <workItem from="1715999201046" duration="7662000" />
-      <workItem from="1716018527472" duration="11659000" />
+      <workItem from="1716018527472" duration="30786000" />
     </task>
     <task id="LOCAL-00001" summary="[2024.05.01] merge to master">
       <option name="closed" value="true" />
@@ -454,28 +451,48 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithCacheService.java</url>
-          <line>78</line>
+          <line>86</line>
           <option name="timeStamp" value="102" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithCacheService.java</url>
-          <line>128</line>
+          <line>136</line>
           <option name="timeStamp" value="108" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithCacheService.java</url>
-          <line>86</line>
+          <line>94</line>
           <option name="timeStamp" value="109" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithCacheService.java</url>
-          <line>100</line>
+          <line>108</line>
           <option name="timeStamp" value="110" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithCacheService.java</url>
-          <line>112</line>
+          <line>120</line>
           <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithCacheService.java</url>
+          <line>252</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithCacheService.java</url>
+          <line>248</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithCacheService.java</url>
+          <line>241</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/msa_order/src/main/java/org/daitem_msa/msa_order/service/OrderAndPayWithCacheService.java</url>
+          <line>243</line>
+          <option name="timeStamp" value="129" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/msa_product/src/main/java/org/daitem_msa/msa_product/common/security/UserFeignClient.java</url>
